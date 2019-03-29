@@ -1,10 +1,8 @@
 version: 0.2
 phases:
-  install:
+  build:
     commands:
       - pip install -r hello_world/requirements.txt -t .
-      - export BUCKET=mj-sam-test
-      - aws cloudformation package --template-file template.yaml --s3-bucket $BUCKET --output-template-file outputtemplate.yaml
 artifacts:
   type: zip
   files:
