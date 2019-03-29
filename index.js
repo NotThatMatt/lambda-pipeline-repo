@@ -1,3 +1,4 @@
+// here is info 
 var time = require('time');
 exports.handler = (event, context, callback) => {
     var currentTime = new time.Date();
